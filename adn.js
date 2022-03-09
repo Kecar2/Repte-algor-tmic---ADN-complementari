@@ -19,6 +19,7 @@ function DNAStrand(dna) {
         "C" : "G"
     }
 // Creamos la función que nos de los caracteres pero luego creamos otra que los sustituya por el metodo reemplazo
+// La "g" después de la expresión regular es una opción o indicador que realiza una búsqueda global, buscando en toda la cadena y devolviendo todas las coincidencias.    
     return dna.replace(/A|T|G|C/g, function(emparejado){
         return secuencia[emparejado];
     });
